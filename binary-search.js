@@ -37,11 +37,11 @@ while(num[middleIndex]!==firstIndex<=lastIndex){
         return mergeArrays(mergeSort(leftIndex)),mergeSort(unsortedArray);
     }
     //
-    function mergeSort(arr) {
-        if (arr.length <= 1) {
-          return arr;
+    function mergeSort(arr1) {
+        if (arr1.length <= 1) {
+          return arr1;
         }
-        let mid = Math.floor(arr.length / 2);
+        let mid = Math.floor(arr1.length / 2);
         let left = arr.slice(0, mid);
         let right = arr.slice(mid);
         return merge(mergeSort(left), mergeSort(right));
@@ -76,11 +76,11 @@ while(num[middleIndex]!==firstIndex<=lastIndex){
             }
             return null;
           }
-          function mergeSort(arr) {
+          function mergeSort(arr1) {
             if (arr1.length <= 1) {
-              return arr;
+              return arr1;
             }
-            let mid = Math.floor(arr.length / 2);
+            let mid = Math.floor(arr1.length / 2);
             let left = arr1.slice(0, mid);
             let right = arr1.slice(mid);
             return merge(mergeSort(left), mergeSort(right));
@@ -98,6 +98,6 @@ while(num[middleIndex]!==firstIndex<=lastIndex){
           }
           //Given the following array, search for the following target
           let target2 = 34;
-          let arr2 = [1, 4, 78, 2, 67, 3];
-          let index = findTarget(arr2, target);
+          let numb2 = [1, 4, 78, 2, 67, 3];
+          let index = findTarget(numb2, target);
           console.log(index);
